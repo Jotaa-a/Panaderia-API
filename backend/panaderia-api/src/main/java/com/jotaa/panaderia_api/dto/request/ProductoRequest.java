@@ -21,6 +21,8 @@ public record ProductoRequest(
         @PositiveOrZero(message = "El stock no puede ser negativo")
         Integer stock,
 
-        @Size(max = 255) String imagenUrl
+        @Size(max = 255) String imagenUrl,
+
+        @Size(max = 20) String unidad
         ) {
 }

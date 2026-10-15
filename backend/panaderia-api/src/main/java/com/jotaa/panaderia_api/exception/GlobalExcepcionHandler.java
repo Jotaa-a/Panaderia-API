@@ -9,8 +9,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class GlobalExcepcionHandler {
-    @ExceptionHandler(RescursoNoEncontradoExcepcion.class)
-    public ProblemDetail noEncontrado(RescursoNoEncontradoExcepcion ex) {
+    @ExceptionHandler(RecursoNoEncontradoExcepcion.class)
+    public ProblemDetail noEncontrado(RecursoNoEncontradoExcepcion ex) {
         return ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, ex.getMessage());
     }
 
