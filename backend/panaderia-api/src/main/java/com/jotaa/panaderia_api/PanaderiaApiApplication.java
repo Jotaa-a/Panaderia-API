@@ -8,6 +8,7 @@ public class PanaderiaApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PanaderiaApiApplication.class, args);
+		System.out.print("prendending");
 	}
 
 }
